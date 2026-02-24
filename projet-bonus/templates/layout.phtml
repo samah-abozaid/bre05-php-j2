@@ -1,0 +1,32 @@
+<?php
+
+  $route =  routing();
+  if($route === "index"){
+  	require "./templates/partials/index.html";
+  }else if($route=== "choice"){
+  	require "./templates/partials/choice.html";
+  }else if( $route === "choice-red"){
+  	require "./templates/partials/choice-red.html";
+  }else if($reoute === "choice-grey-blue"){
+  	require "./templates/partials/choice-grey-blue.html";
+  }else{
+  	return  "./templates/partials/choice-dark-blue.html";
+  }
+	/*
+		le code PHP de la page
+		déclaration de variables, conditions, etc etc
+	*/
+?>
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			Le titre de ma page
+		</title>
+	</head>
+	<body>
+		<!-- le code HTML de la page -->
+		
+	</body>
+</html>
